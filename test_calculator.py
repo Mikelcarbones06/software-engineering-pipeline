@@ -52,9 +52,11 @@ def test_logarithms_reject_invalid_values():
 def test_sqrt():
     assert sqrt(4) == 2
 
+
 def test_degrees():
     assert rad_to_degrees(math.pi/2) == 90
     assert rad_to_degrees(math.pi) == 180
+
 
 def test_radians():
     assert deg_to_radians(45) == math.pi/4
