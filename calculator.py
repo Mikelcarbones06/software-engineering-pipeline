@@ -21,5 +21,7 @@ def log(value, base=10):
     if base <= 0 or base == 1:
         raise ValueError("log base must be positive and different from 1")
     return math.log(value, base)
+
+
 def sqrt(a):
-    return  a**(1/2)
+    return a ** (1 / 2)

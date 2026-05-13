@@ -2,10 +2,9 @@ import math
 
 import pytest
 
-from calculator import add, ln, log, sub
+from calculator import add, ln, log, sqrt, sub
 
 
-from calculator import add, sub, sqrt
 def test_add():
     assert add(2, 3) == 5
 
@@ -33,5 +32,7 @@ def test_logarithms_reject_invalid_values():
         log(-10)
     with pytest.raises(ValueError):
         log(10, 1)
+
+
 def test_sqrt():
     assert sqrt(4) == 2
