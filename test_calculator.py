@@ -1,7 +1,8 @@
-from calculator import add, sub, multiply, divide, power, ln, log, sqrt
 import math
 
 import pytest
+
+from calculator import add, divide, ln, log, multiply, power, sqrt, sub
 
 
 def test_add():
@@ -10,14 +11,20 @@ def test_add():
 
 def test_sub():
     assert sub(10, 4) == 6
+
+
 def test_multiply():
     assert multiply(3, 4) == 12
     assert multiply(0, 5) == 0
+
+
 def test_divide():
     assert divide(10, 4) == 2.5
     assert divide(20, 2) == 10
+
+
 def test_power():
-    assert power(4, 2) == 8
+    assert power(4, 2) == 16
     assert power(3, 3) == 27
 
 
@@ -40,5 +47,7 @@ def test_logarithms_reject_invalid_values():
         log(-10)
     with pytest.raises(ValueError):
         log(10, 1)
+
+
 def test_sqrt():
     assert sqrt(4) == 2

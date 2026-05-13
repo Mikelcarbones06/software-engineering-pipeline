@@ -7,16 +7,19 @@ def add(a, b):
 
 def sub(a, b):
     return a - b
-def multiply(a, b):
-    return a * b
+
 
 def multiply(a, b):
     return a * b
 
-def divide(a,b):
-    return a/b
+
+def divide(a, b):
+    return a / b
+
+
 def power(a, b):
     return a ** b
+
 
 def ln(value):
     if value <= 0:
@@ -30,5 +33,7 @@ def log(value, base=10):
     if base <= 0 or base == 1:
         raise ValueError("log base must be positive and different from 1")
     return math.log(value, base)
+
+
 def sqrt(a):
-    return  a**(1/2)
+    return a ** (1 / 2)
