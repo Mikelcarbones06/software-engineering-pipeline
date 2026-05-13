@@ -1,3 +1,4 @@
+from calculator import add, sub, multiply, power
 import math
 
 import pytest
@@ -12,6 +13,12 @@ def test_add():
 
 def test_sub():
     assert sub(10, 4) == 6
+def test_multiply():
+    assert multiply(3, 4) == 12
+    assert multiply(0, 5) == 0
+def test_power():
+    assert power(4, 2) == 8
+    assert power(3, 3) == 27
 
 
 def test_ln():
