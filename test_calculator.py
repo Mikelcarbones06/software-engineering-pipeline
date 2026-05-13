@@ -2,7 +2,8 @@ import math
 
 import pytest
 
-from calculator import add, divide, ln, log, multiply, power, sqrt, sub, deg_to_radians, rad_to_degrees
+from calculator import add, divide, ln, log, multiply, power, sqrt
+from calculator import sub, deg_to_radians, rad_to_degrees
 
 
 def test_add():
@@ -61,3 +62,4 @@ def test_degrees():
 def test_radians():
     assert deg_to_radians(45) == math.pi/4
     assert deg_to_radians(270) == 3 * math.pi/2
+
