@@ -39,10 +39,9 @@ def sqrt(a):
     return a ** (1 / 2)
 
 
-def rad_to_degrees(x): 
+def rad_to_degrees(x):
     return math.degrees(x)
 
 
-def deg_to_radians(x): 
+def deg_to_radians(x):
     return math.radians(x)
-

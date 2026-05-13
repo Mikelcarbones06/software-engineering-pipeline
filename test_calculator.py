@@ -62,4 +62,3 @@ def test_degrees():
 def test_radians():
     assert deg_to_radians(45) == math.pi/4
     assert deg_to_radians(270) == 3 * math.pi/2
-
