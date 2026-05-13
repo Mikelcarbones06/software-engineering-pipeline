@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from calculator import add, divide, ln, log, multiply, power, sqrt, sub
+from calculator import add, divide, ln, log, multiply, power, sqrt, sub, deg_to_radians, rad_to_degrees
 
 
 def test_add():
@@ -51,3 +51,11 @@ def test_logarithms_reject_invalid_values():
 
 def test_sqrt():
     assert sqrt(4) == 2
+
+def test_degrees():
+    assert rad_to_degrees(math.pi/2) == 90
+    assert rad_to_degrees(math.pi) == 180
+
+def test_radians():
+    assert deg_to_radians(45) == math.pi/4
+    assert deg_to_radians(270) == 3 * math.pi/2
